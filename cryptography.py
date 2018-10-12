@@ -10,11 +10,11 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-input("Enter e to encrypt, d to decrypt, of q to quit: ")
+command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
+if command == "q":
+    print("Goodbye!")
 message = input("Message: ")
 input("Key: ")
-char = 
+list(associations)
 associations.find(char)
 associations[index]
-if message == "q":
-    print("Goodbye!")
