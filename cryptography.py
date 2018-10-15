@@ -13,7 +13,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
 if command != "q":
     message = input("Message: ")
-    input("Key: ")
+    key = input("Key: ")
     for i in range(len(message)):
         associations.find(message[i])
         associations.find(key[i])
