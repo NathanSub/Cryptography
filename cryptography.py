@@ -15,6 +15,7 @@ if command == "q":
     print("Goodbye!")
 message = input("Message: ")
 input("Key: ")
-list(associations)
+char = x in list(associations)
 associations.find(char)
+for i in range(len(message))
 associations[index]
