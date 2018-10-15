@@ -18,6 +18,6 @@ input("Key: ")
 char = x in list(associations)
 associations.find(char)
 for i in range(len(message)):
-    associations.find(message[i]
-    associations.find(key[i]
+    associations.find(message[i])
+    associations.find(key[i])
 associations[index]
