@@ -11,13 +11,12 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
-if command == "q":
-    print("Goodbye!")
-message = input("Message: ")
-input("Key: ")
-char = x in list(associations)
-associations.find(char)
-for i in range(len(message)):
-    associations.find(message[i])
-    associations.find(key[i])
+if command != "q":
+    message = input("Message: ")
+    input("Key: ")
+    for i in range(len(message)):
+        associations.find(message[i])
+        associations.find(key[i])
+else:
+    print("Goodbye!"
 associations[index]
