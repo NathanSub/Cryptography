@@ -19,4 +19,3 @@ if command != "q":
         associations.find(key[i])
 else:
     print("Goodbye!")
-associations[index]
