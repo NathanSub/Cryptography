@@ -18,5 +18,5 @@ if command != "q":
         associations.find(message[i])
         associations.find(key[i])
 else:
-    print("Goodbye!"
+    print("Goodbye!")
 associations[index]
