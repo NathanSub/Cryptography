@@ -24,6 +24,7 @@ if command == "e" or command == "d":
             print(associations[x], end = '')
     if command == "d":
         for i in range(len(message)):
+            (encryptnumb - associations.find(key[i]))
     
         
 elif command == "q":
