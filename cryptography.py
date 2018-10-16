@@ -24,7 +24,7 @@ if command == "e" or command == "d":
             print(associations[x], end = '')
     if command == "d":
         for i in range(len(message)):
-            decryptnumb = (encryptnumb - associations.find(key[i]))
+            decryptnumb = ((associations.find(message[i]) + associations.find(key[i])) - associations.find(key[i]))
             nums.append(decryptnumb)
         for x in nums:
             print(associations[x], end = '')
