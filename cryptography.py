@@ -15,10 +15,11 @@ command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
 if command != "q":
     message = input("Message: ")
     key = input("Key: ")
-    for i in range(len(message)):
-        messagenumb = associations.find(message[i])
-        keynumb = associations.find(key[i])
-        encryptnumb = (messagenumb+keynumb)
+    if command == "e":
+        for i in range(len(message)):
+            messagenumb = associations.find(message[i])
+            keynumb = associations.find(key[i])
+            encryptnumb = (messagenumb+keynumb)
         
         
 else:
