@@ -16,16 +16,16 @@ if command == "e" or command == "d":
     message = input("Message: ")
     key = input("Key: ")
     nums = []
-    for i in range(len(message)):
+    if command == "e":
+        for i in range(len(message)):
         encryptnumb = (associations.find(message[i]) + associations.find(key[i]))
         nums.append(encryptnumb)
-    for i in range(len(message)):
-        decryptnumb = (encryptnumb - associations.find(key[i]))
-        nums.append(decryptnumb)
-    if command == "e":
         for x in nums:
             print(associations[x], end = '')
     if command == "d":
+        for i in range(len(message)):
+        decryptnumb = (encryptnumb - associations.find(key[i]))
+        nums.append(decryptnumb)
         for x in nums:
             print(associations[x], end = '')
     
