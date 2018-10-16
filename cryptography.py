@@ -20,7 +20,7 @@ if command == "e" or command == "d":
         encryptnumb = (associations.find(message[i]) + associations.find(key[i]))
         nums.append(encryptnumb)
     for i in range(len(message)):
-        decryptnumb = (associations.find(encryptnumb[i]) - associations.find(key[i]))
+        decryptnumb = (encryptnumb - associations.find(key[i]))
         nums.append(decryptnumb)
     if command == "e":
         for x in nums:
