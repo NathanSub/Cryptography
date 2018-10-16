@@ -20,6 +20,7 @@ if command != "q":
         keynumb = associations.find(key[i])
         encryptnumb = (messagenumb+keynumb)
         encrypt = associations.find(encryptnumb[i])
+        print(encrypt)
         
 else:
     print("Goodbye!")
