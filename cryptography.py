@@ -18,7 +18,7 @@ if command != "q":
     for i in range(len(message)):
         messagenumb = associations.find(message[i])
         keynumb = associations.find(key[i])
-        encryptnumb = list(int(messagenumb+keynumb))
+        encryptnumb = (messagenumb+keynumb)
         
         
 else:
