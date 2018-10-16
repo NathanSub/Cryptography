@@ -21,6 +21,7 @@ if command != "q":
             keynumb = associations.find(key[i])
             encryptnumb = (messagenumb+keynumb)
         
-        
-else:
+elif command == "q":
     print("Goodbye!")
+else:
+    print("Did not understand command, try again.")
