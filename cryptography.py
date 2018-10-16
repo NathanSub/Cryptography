@@ -18,7 +18,6 @@ if command != "q":
     for i in range(len(message)):
         messagenumb = associations.find(message[i])
         keynumb = associations.find(key[i])
-    for i in range(len(message))
         print(messagenumb+keynumb)
         
 else:
