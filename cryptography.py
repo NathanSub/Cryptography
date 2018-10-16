@@ -20,7 +20,7 @@ if command == "e" or command == "d":
             messagenumb = associations.find(message[i])
             keynumb = associations.find(key[i])
             encryptnumb = (messagenumb+keynumb)
-        for i in range(len(encryptnumb)):
+        for i in range(encryptnumb):
             encrypt = associations.find(encryptnumb[i])
         
 elif command == "q":
