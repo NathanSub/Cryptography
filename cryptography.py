@@ -16,7 +16,10 @@ if command != "q":
     message = input("Message: ")
     key = input("Key: ")
     for i in range(len(message)):
-        associations.find(message[i])
-        associations.find(key[i])
+        messagenumb = associations.find(message[i])
+        keynumb = associations.find(key[i])
+    for i in range(len(message))
+        print(messagenumb+keynumb)
+        
 else:
     print("Goodbye!")
