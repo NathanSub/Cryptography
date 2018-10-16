@@ -22,7 +22,7 @@ if command == "e" or command == "d":
             nums.append(encryptnumb)
         for x in nums:
             encrypt = (associations[x])
-            print({0}.format(encrypt))
+            print("{0}".format(encrypt))
         
 elif command == "q":
     print("Goodbye!")
