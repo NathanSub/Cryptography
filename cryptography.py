@@ -17,7 +17,7 @@ if command == "e" or command == "d":
     key = input("Key: ")
     keyword = key
     if len(message) > len(key):
-        keyword = key*2
+        keyword = key*len(message)
     else:
         keyword = keyword
     nums = []
