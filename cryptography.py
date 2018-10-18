@@ -38,4 +38,5 @@ if command == "e" or command == "d":
 elif command == "q":
     print("Goodbye!")
 else:
+    while command != "e" and command != "d" and command != "q":
     print("Did not understand command, try again.")
