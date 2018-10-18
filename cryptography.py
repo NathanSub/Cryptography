@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Nathan Subrahmanian
-Credit: Partner
+Credit: Desk Partner
 
 Assignment:
 
