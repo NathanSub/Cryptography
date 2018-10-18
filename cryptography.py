@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Nathan Subrahmanian
-Credit: Desk Partner (Jackson Lake)
+Credit: https://www.youtube.com/watch?v=SZdQX4gbql0
 
 Assignment:
 
@@ -12,6 +12,8 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
 
+while x == 6:
+    
 if command == "e" or command == "d":
     message = input("Message: ")
     key = input("Key: ")
@@ -38,5 +40,6 @@ if command == "e" or command == "d":
 elif command == "q":
     print("Goodbye!")
 else:
-    x == 6
     print("Did not understand command, try again.")
+    
+** USE LOOP **
