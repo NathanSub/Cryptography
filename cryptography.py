@@ -15,6 +15,8 @@ command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
 if command == "e" or command == "d":
     message = input("Message: ")
     key = input("Key: ")
+    if len(message) > len(key):
+        
     nums = []
     if command == "e":
         for i in range(len(message)):
