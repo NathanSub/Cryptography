@@ -38,4 +38,5 @@ if command == "e" or command == "d":
 elif command == "q":
     print("Goodbye!")
 else:
+    x == 6
     print("Did not understand command, try again.")
