@@ -16,6 +16,7 @@ if command == "e" or command == "d":
     message = input("Message: ")
     key = input("Key: ")
     nums = []
+    encryptnumb = (associations.find(message[i]) + associations.find(key[i]))
     if command == "e":
         for i in range(len(message)):
             encryptnumb = (associations.find(message[i]) + associations.find(key[i]))
