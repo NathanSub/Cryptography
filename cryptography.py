@@ -42,4 +42,4 @@ elif command == "q":
 else:
     print("Did not understand command, try again.")
     
-** USE LOOP **
+## USE LOOP ##
