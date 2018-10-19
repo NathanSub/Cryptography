@@ -39,6 +39,5 @@ while command != "q":
     else:
         print("Did not understand command, try again.")
 else:
-    print("Goodbye"!)
-    
+    print("Goodbye!")
 ## USE LOOP ##
