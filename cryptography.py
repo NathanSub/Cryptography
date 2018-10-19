@@ -12,12 +12,11 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
 
-while x == 6:
-    
-if command == "e" or command == "d":
-    message = input("Message: ")
-    key = input("Key: ")
-    keyword = key
+while command == "e" or command == "d" is True:
+    if command == "e" or command == "d":
+        message = input("Message: ")
+        key = input("Key: ")
+        keyword = key
     if len(message) > len(key):
         keyword = key*len(message)
     else:
