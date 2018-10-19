@@ -37,7 +37,7 @@ while command != "q":
                 print(associations[x], end = '')
     elif command != "q":
         print("Did not understand command, try again.")
-
+    break
 print("Goodbye!")
     
 ## USE LOOP ##
