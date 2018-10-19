@@ -34,13 +34,9 @@ while command != "q":
             nums.append(decryptnumb)
         for x in nums:
             print(associations[x], end = '')
-    
-        
-    elif command == "q":
-        print("Goodbye!")
     else:
         print("Did not understand command, try again.")
 else:
-    print("Goodbye")
+    print("Goodbye!")
     
 ## USE LOOP ##
