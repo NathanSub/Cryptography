@@ -11,6 +11,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
+command = "z"
 
 while command != "q":
     command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
@@ -18,23 +19,23 @@ while command != "q":
         message = input("Message: ")
         key = input("Key: ")
         keyword = key
-    if len(message) > len(key):
-        keyword = key*len(message)
-    else:
-        keyword = keyword
-    nums = []
-    if command == "e":
-        for i in range(len(message)):
-            encryptnumb = (associations.find(message[i]) + associations.find(keyword[i]))
-            nums.append(encryptnumb)
-        for x in nums:
-            print(associations[x], end = '')
-    if command == "d":
-        for i in range(len(message)):
-            decryptnumb = (associations.find(message[i]) - associations.find(keyword[i]))
-            nums.append(decryptnumb)
-        for x in nums:
-            print(associations[x], end = '')
+        if len(message) > len(key):
+            keyword = key*len(message)
+        else:
+            keyword = keyword
+        nums = []
+        if command == "e":
+            for i in range(len(message)):
+                encryptnumb = (associations.find(message[i]) + associations.find(keyword[i]))
+                nums.append(encryptnumb)
+            for x in nums:
+                print(associations[x], end = '')
+        if command == "d":
+            for i in range(len(message)):
+                decryptnumb = (associations.find(message[i]) - associations.find(keyword[i]))
+                nums.append(decryptnumb)
+            for x in nums:
+                print(associations[x], end = '')
     else:
         print("Did not understand command, try again.")
 else:
