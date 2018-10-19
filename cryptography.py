@@ -36,9 +36,9 @@ while command == "e" or command == "d" is True:
             print(associations[x], end = '')
     
         
-elif command == "q":
-    print("Goodbye!")
-else:
-    print("Did not understand command, try again.")
+    elif command == "q":
+        print("Goodbye!")
+    else:
+        print("Did not understand command, try again.")
     
 ## USE LOOP ##
