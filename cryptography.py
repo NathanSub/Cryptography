@@ -29,6 +29,7 @@ while command != "q":
                 nums.append(encryptnumb)
             for x in nums:
                 print(associations[x], end = '')
+            print()
         if command == "d":
             for i in range(len(message)):
                 decryptnumb = (associations.find(message[i]) - associations.find(keyword[i]))
