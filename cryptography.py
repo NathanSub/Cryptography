@@ -36,6 +36,7 @@ while command != "q":
                 nums.append(decryptnumb)
             for x in nums:
                 print(associations[x], end = '')
+            print()
     elif command != "q":
         print("Did not understand command, try again.")
     
