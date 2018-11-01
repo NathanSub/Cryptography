@@ -26,9 +26,9 @@ while command != "q":
         if command == "e":
             for i in range(len(message)):
                 encryptnumb = (associations.find(message[i]) + associations.find(keyword[i]))
-                nums.append(encryptnumb)
-            for x in nums:
-                print(associations[x], end = '')
+                if encryptnumb >= 86:
+                    associations = associations * 2
+            print(associations[encryptnumb], end = '')
             print()
         if command == "d":
             for i in range(len(message)):
