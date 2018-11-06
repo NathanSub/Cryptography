@@ -24,15 +24,15 @@ while command != "q":
         nums=[]
         if command == "e":
             for i in range(len(message)): 
-                thing = associations.find(message[i]) + associations.find(key[i])
+                encryptnumb = associations.find(message[i]) + associations.find(key[i])
                 print(associations[thing], end = '')
             print()
         if command == "d":
             for i in range(len(message)):
-                thing = associations.find(message[i]) - associations.find(key[i])
-                if thing < 0:
-                    thing += associationslength
-                print(associations[thing], end = '')
+                encryptnumb = associations.find(message[i]) - associations.find(key[i])
+                if encryptnumb < 0:
+                    encryptnumb += associationslength
+                print(associations[encryptnumb], end = '')
             print()
     elif command != "q": 
         print("Did not understand command, try again.")
