@@ -25,7 +25,7 @@ while command != "q":
         if command == "e":
             for i in range(len(message)): 
                 encryptnumb = associations.find(message[i]) + associations.find(key[i])
-                print(associations[thing], end = '')
+                print(associations[encryptnumb], end = '')
             print()
         if command == "d":
             for i in range(len(message)):
