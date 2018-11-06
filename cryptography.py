@@ -10,37 +10,31 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+associationslength = len(associations)
 command = "z"
 
+
 while command != "q":
-    command = input("Enter e to encrypt, d to decrypt, of q to quit: ")
+    command = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if command == "e" or command == "d":
         message = input("Message: ")
         key = input("Key: ")
-        keyword = key
         if len(message) > len(key):
-            keyword = key*len(message)
-        else:
-            keyword = keyword
-        nums = []
+            key = len(message)*key
+        nums=[]
         if command == "e":
-            for i in range(len(message)):
-                encryptnumb = (associations.find(message[i]) + associations.find(keyword[i]))
-                if encryptnumb >= 86:
-                    associations = associations * 2
-                print(associations[encryptnumb], end = '')
+            for i in range(len(message)): 
+                thing = associations.find(message[i]) + associations.find(key[i])
+                print(associations[thing], end = '')
             print()
         if command == "d":
             for i in range(len(message)):
-                decryptnumb = (associations.find(message[i]) - associations.find(keyword[i]))
-                nums.append(decryptnumb)
-            for x in nums:
-                print(associations[x], end = '')
+                thing = associations.find(message[i]) - associations.find(key[i])
+                if thing < 0:
+                    thing += alength
+                print(associations[thing], end = '')
             print()
-    elif command != "q":
+    elif command != "q": 
         print("Did not understand command, try again.")
-    
-print("Goodbye!")
-    
-## USE LOOP ##
 
+print("Goodbye!")
