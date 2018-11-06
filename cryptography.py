@@ -31,7 +31,7 @@ while command != "q":
             for i in range(len(message)):
                 thing = associations.find(message[i]) - associations.find(key[i])
                 if thing < 0:
-                    thing += alength
+                    thing += associationslength
                 print(associations[thing], end = '')
             print()
     elif command != "q": 
